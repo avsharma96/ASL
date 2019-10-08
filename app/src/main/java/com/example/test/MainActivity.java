@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
                                        int position, long row_id) {
 
                 String selectedItem = arg0.getItemAtPosition(position).toString();
-                System.out.println(selectedItem);
                 if(!selectedItem.equals("Select an item")) {
                     Intent intent = new Intent(MainActivity.this, learnvideo.class);
 
@@ -52,18 +51,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }
-                /*if(selectedItem.equals("Gift"))
-
-                {
-                    Intent intent = new Intent(MainActivity.this, learnvideo.class);
-                    Bundle b = new Bundle();
-                    b.putString("key", "Gift");
-                    intent.putExtras(b); //Put your id to your next Intent
-                    startActivity(intent);
-                    finish();
-                }*/
-
-
             }
 
             @Override
