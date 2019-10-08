@@ -1,10 +1,15 @@
 package com.example.test;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
@@ -191,5 +196,7 @@ public class learnvideo extends AppCompatActivity {
     public void openCamera(View view) {
         Intent intent = new Intent(learnvideo.this, cameraRecord.class);
         startActivity(intent);
+
+
     }
 }
