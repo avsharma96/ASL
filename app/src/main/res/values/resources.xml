@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="gesture_array">
-        <item>Select an item</item>
+        <item>Select a gesture</item>
         <item>Gift</item>
         <item>Car</item>
         <item>Pay</item>
