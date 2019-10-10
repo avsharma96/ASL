@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                                        int position, long row_id) {
 
                 String selectedItem = arg0.getItemAtPosition(position).toString();
-                if(!selectedItem.equals("Select an item")) {
+                if(!selectedItem.equals("Select a gesture")) {
                     Intent intent = new Intent(MainActivity.this, learnvideo.class);
 
                     Bundle b = new Bundle();
